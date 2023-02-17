@@ -5,8 +5,253 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Geometry Genius Projects</title>
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css for tailwind  -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .button {
+          padding: 0.6em 1em;
+          border: none;
+          border-radius: 8px;
+          background: #b68c5a;
+        }
+      }
+    </style>
   </head>
   <body>
+    <header
+      class="w-11/12 mx-auto flex justify-between items-center bg-sky-200 rounded-md px-8 py-3 m-6"
+    >
+      <div>
+        <h2 class="lg:text-4xl text-2xl font-semibold pb-1">Interactive</h2>
+        <p>Geometry Genius</p>
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="bg-blue-500 text-lg text-white font-medium py-1 px-6 rounded-lg"
+        >
+          Blog
+        </button>
+      </div>
+    </header>
+    <main class="w-11/12 mx-auto flex lg:flex-row flex-col gap-4">
+      <div class="w-full lg:w-3/4 grid lg:grid-cols-3 gap-4">
+        <div
+          class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
+        >
+          <img
+            src="/images/triangle.png"
+            class="w-9/12 mx-auto"
+            alt="These is Triangle image"
+          />
+          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="flex px-6 mb-8 mt-3">
+            <div class="w-1/2">
+              <input
+                id="b"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="b" class="text-xl">cm</label>
+            </div>
+            <div class="w-1/2">
+              <input
+                id="h"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="h" class="text-xl">cm</label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 w-full text-white text-lg rounded-md py-1"
+          >
+            Calculate
+          </button>
+        </div>
+        <div
+          class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
+        >
+          <img
+            src="/images/triangle.png"
+            class="w-9/12 mx-auto"
+            alt="These is Triangle image"
+          />
+          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="flex px-6 mb-8 mt-3">
+            <div class="w-1/2">
+              <input
+                id="b"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="b" class="text-xl">cm</label>
+            </div>
+            <div class="w-1/2">
+              <input
+                id="h"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="h" class="text-xl">cm</label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 w-full text-white text-lg rounded-md py-1"
+          >
+            Calculate
+          </button>
+        </div>
+        <div
+          class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
+        >
+          <img
+            src="/images/triangle.png"
+            class="w-9/12 mx-auto"
+            alt="These is Triangle image"
+          />
+          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="flex px-6 mb-8 mt-3">
+            <div class="w-1/2">
+              <input
+                id="b"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="b" class="text-xl">cm</label>
+            </div>
+            <div class="w-1/2">
+              <input
+                id="h"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="h" class="text-xl">cm</label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 w-full text-white text-lg rounded-md py-1"
+          >
+            Calculate
+          </button>
+        </div>
+        <div
+          class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
+        >
+          <img
+            src="/images/triangle.png"
+            class="w-9/12 mx-auto"
+            alt="These is Triangle image"
+          />
+          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="flex px-6 mb-8 mt-3">
+            <div class="w-1/2">
+              <input
+                id="b"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="b" class="text-xl">cm</label>
+            </div>
+            <div class="w-1/2">
+              <input
+                id="h"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="h" class="text-xl">cm</label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 w-full text-white text-lg rounded-md py-1"
+          >
+            Calculate
+          </button>
+        </div>
+        <div
+          class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
+        >
+          <img
+            src="/images/triangle.png"
+            class="w-9/12 mx-auto"
+            alt="These is Triangle image"
+          />
+          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="flex px-6 mb-8 mt-3">
+            <div class="w-1/2">
+              <input
+                id="b"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="b" class="text-xl">cm</label>
+            </div>
+            <div class="w-1/2">
+              <input
+                id="h"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="h" class="text-xl">cm</label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 w-full text-white text-lg rounded-md py-1"
+          >
+            Calculate
+          </button>
+        </div>
+        <div
+          class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
+        >
+          <img
+            src="/images/triangle.png"
+            class="w-9/12 mx-auto"
+            alt="These is Triangle image"
+          />
+          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="flex px-6 mb-8 mt-3">
+            <div class="w-1/2">
+              <input
+                id="b"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="b" class="text-xl">cm</label>
+            </div>
+            <div class="w-1/2">
+              <input
+                id="h"
+                class="w-2/4 text-sm border-2 border-solid border-zinc-300 rounded-md outline-none px-2"
+                type="text"
+              />
+              <label for="h" class="text-xl">cm</label>
+            </div>
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 w-full text-white text-lg rounded-md py-1"
+          >
+            Calculate
+          </button>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/4 bg-slate-800">sdl;jhksdf;g</div>
+    </main>
+    <!-- js file include here  -->
     <script src="js/geomentry.js"></script>
   </body>
 </html>
