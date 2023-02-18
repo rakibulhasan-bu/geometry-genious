@@ -25,36 +25,35 @@ function inputValueMultiple(inputId1, inputId2) {
   }
 }
 
-// make structure of html element
+// make function of html element to add area section
+function showCalculation(Name, finalResult) {
+  const areaOl = document.querySelector("#area-ol");
+  const li = document.createElement("li");
+  li.innerHTML = `
+              <div class="flex justify-between mb-4">
+                <p>${Name}</p>
+                <p>${finalResult} cm<sup>2</sup></p>
+                <button
+                  class="bg-blue-500 hover:bg-sky-900 text-sm text-white font-medium py-1 px-1 rounded-lg"
+                >
+                  Convert to m<sup>2</sup>
+                </button>
+              </div>
+            `;
+  areaOl.appendChild(li);
+}
 
 // triangle value calculation
 document.querySelector("#btn-triangle").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#b", "#h");
-  const areaOl = document.querySelector("#area-ol");
-  const li = document.createElement(li);
-  console.log(li);
-  // li.innerText = "askdfjh";
-  // let structureLi = `
-  //             <div class="flex justify-between mb-4">
-  //               <p>Triangle</p>
-  //               <p>12 cm<sup>2</sup></p>
-  //               <button
-  //                 class="bg-blue-500 hover:bg-sky-900 text-white font-medium py-1 px-2 rounded-lg"
-  //               >
-  //                 Convert to m<sup>2</sup>
-  //               </button>
-  //             </div>
-  //           `;
-  // let a = (li.innerHTML = structureLi);
-  // areaOl.appendChild = li;
-
-  console.log(0.5 * inputMultiple);
+  const finalCalculation = 0.5 * inputMultiple;
+  showCalculation("Triangle", finalCalculation);
 });
 
 // rectangle value calculation
 document.querySelector("#btn-rectangle").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#w", "#i");
-  console.log(inputMultiple);
+  showCalculation("Rectangle", inputMultiple);
 });
 
 // parallelogram value calculation
@@ -62,25 +61,28 @@ document
   .querySelector("#btn-parallelogram")
   .addEventListener("click", function () {
     const inputMultiple = inputValueMultiple("#bx", "#hy");
-    console.log(inputMultiple);
+    showCalculation("Parallelogram", inputMultiple);
   });
 
 // rhombus value calculation
 document.querySelector("#btn-rhombus").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#d1", "#d2");
-  console.log(0.5 * inputMultiple);
+  const finalCalculation = 0.5 * inputMultiple;
+  showCalculation("Rhombus", finalCalculation);
 });
 
 // pentagon value calculation
 document.querySelector("#btn-pentagon").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#p", "#bz");
-  console.log(0.5 * inputMultiple);
+  const finalCalculation = 0.5 * inputMultiple;
+  showCalculation("Pentagon", finalCalculation);
 });
 
 // ellipse value calculation
 document.querySelector("#btn-ellipse").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#a", "#bw");
-  console.log((3.1416 * inputMultiple).toFixed(2));
+  const finalCalculation = (3.1416 * inputMultiple).toFixed(2);
+  showCalculation("Ellipse", finalCalculation);
 });
 
 //get 6 digits number
