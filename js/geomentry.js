@@ -3,6 +3,86 @@ document.querySelector("#btn-blog").addEventListener("click", function () {
   location.href = "Blog/blog.html";
 });
 
+// two input value multiple
+function inputValueMultiple(inputId1, inputId2) {
+  let input1 = document.querySelector(inputId1);
+  let input2 = document.querySelector(inputId2);
+
+  const inputValue1 = Number(input1.value);
+  const inputValue2 = Number(input2.value);
+  input1.value = "";
+  input2.value = "";
+  if (
+    isNaN(inputValue1) ||
+    isNaN(inputValue2) ||
+    inputValue1 === 0 ||
+    inputValue2 === 0
+  ) {
+    alert("please input a Number");
+    return 0;
+  } else {
+    return inputValue1 * inputValue2;
+  }
+}
+
+// make structure of html element
+
+// triangle value calculation
+document.querySelector("#btn-triangle").addEventListener("click", function () {
+  const inputMultiple = inputValueMultiple("#b", "#h");
+  const areaOl = document.querySelector("#area-ol");
+  const li = document.createElement(li);
+  console.log(li);
+  // li.innerText = "askdfjh";
+  // let structureLi = `
+  //             <div class="flex justify-between mb-4">
+  //               <p>Triangle</p>
+  //               <p>12 cm<sup>2</sup></p>
+  //               <button
+  //                 class="bg-blue-500 hover:bg-sky-900 text-white font-medium py-1 px-2 rounded-lg"
+  //               >
+  //                 Convert to m<sup>2</sup>
+  //               </button>
+  //             </div>
+  //           `;
+  // let a = (li.innerHTML = structureLi);
+  // areaOl.appendChild = li;
+
+  console.log(0.5 * inputMultiple);
+});
+
+// rectangle value calculation
+document.querySelector("#btn-rectangle").addEventListener("click", function () {
+  const inputMultiple = inputValueMultiple("#w", "#i");
+  console.log(inputMultiple);
+});
+
+// parallelogram value calculation
+document
+  .querySelector("#btn-parallelogram")
+  .addEventListener("click", function () {
+    const inputMultiple = inputValueMultiple("#bx", "#hy");
+    console.log(inputMultiple);
+  });
+
+// rhombus value calculation
+document.querySelector("#btn-rhombus").addEventListener("click", function () {
+  const inputMultiple = inputValueMultiple("#d1", "#d2");
+  console.log(0.5 * inputMultiple);
+});
+
+// pentagon value calculation
+document.querySelector("#btn-pentagon").addEventListener("click", function () {
+  const inputMultiple = inputValueMultiple("#p", "#bz");
+  console.log(0.5 * inputMultiple);
+});
+
+// ellipse value calculation
+document.querySelector("#btn-ellipse").addEventListener("click", function () {
+  const inputMultiple = inputValueMultiple("#a", "#bw");
+  console.log((3.1416 * inputMultiple).toFixed(2));
+});
+
 //get 6 digits number
 function generateNumber() {
   const randNumber = Math.floor(Math.random() * 1000000);
