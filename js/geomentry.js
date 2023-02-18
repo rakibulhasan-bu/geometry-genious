@@ -19,11 +19,15 @@ function getNumber() {
 }
 
 // style color on div
-function styleMouseOver(idName) {
+function styleMouseOver(idName, inputID1, inputID2) {
   const mainNumber = getNumber();
   const div = document.querySelector(idName);
   div.style.backgroundColor = `#${mainNumber}`;
   div.style.color = "#fff";
+  const divInput1 = document.querySelector(inputID1);
+  divInput1.style.color = "#000";
+  const divInput2 = document.querySelector(inputID2);
+  divInput2.style.color = "#000";
 }
 
 // style color on div
@@ -34,7 +38,7 @@ function styleMouseOut(idName) {
 }
 // designing hover color on triangle
 document.querySelector("#triangle").addEventListener("mouseover", function () {
-  styleMouseOver("#triangle");
+  styleMouseOver("#triangle", "#b", "#h");
 });
 // designing hover color on triangle
 document.querySelector("#triangle").addEventListener("mouseout", function () {
@@ -42,7 +46,7 @@ document.querySelector("#triangle").addEventListener("mouseout", function () {
 });
 // designing hover color on rectangle
 document.querySelector("#rectangle").addEventListener("mouseover", function () {
-  styleMouseOver("#rectangle");
+  styleMouseOver("#rectangle", "#w", "#i");
 });
 // designing hover color on rectangle
 document.querySelector("#rectangle").addEventListener("mouseout", function () {
@@ -52,7 +56,7 @@ document.querySelector("#rectangle").addEventListener("mouseout", function () {
 document
   .querySelector("#parallelogram")
   .addEventListener("mouseover", function () {
-    styleMouseOver("#parallelogram");
+    styleMouseOver("#parallelogram", "#bx", "#hy");
   });
 // designing hover color on parallelogram
 document
@@ -62,7 +66,7 @@ document
   });
 // designing hover color on rhombus
 document.querySelector("#rhombus").addEventListener("mouseover", function () {
-  styleMouseOver("#rhombus");
+  styleMouseOver("#rhombus", "#d1", "#d2");
 });
 // designing hover color on rhombus
 document.querySelector("#rhombus").addEventListener("mouseout", function () {
@@ -70,7 +74,7 @@ document.querySelector("#rhombus").addEventListener("mouseout", function () {
 });
 // designing hover color on pentagon
 document.querySelector("#pentagon").addEventListener("mouseover", function () {
-  styleMouseOver("#pentagon");
+  styleMouseOver("#pentagon", "#p", "#bz");
 });
 // designing hover color on pentagon
 document.querySelector("#pentagon").addEventListener("mouseout", function () {
@@ -78,7 +82,7 @@ document.querySelector("#pentagon").addEventListener("mouseout", function () {
 });
 // designing hover color on ellipse
 document.querySelector("#ellipse").addEventListener("mouseover", function () {
-  styleMouseOver("#ellipse");
+  styleMouseOver("#ellipse", "#a", "#bw");
 });
 // designing hover color on ellipse
 document.querySelector("#ellipse").addEventListener("mouseout", function () {
