@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geometry Genius Blog</title>
+    <!-- tailwind css link  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- custom css for tailwind  -->
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .button {
+          padding: 0.6em 1em;
+          border: none;
+          border-radius: 8px;
+          background: #b68c5a;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header
+      class="w-11/12 mx-auto flex justify-between items-center bg-sky-200 rounded-md px-8 py-3 m-6"
+    >
+      <div>
+        <h2 class="lg:text-4xl text-2xl font-semibold pb-1">Interactive</h2>
+        <p>Geometry Genius</p>
+      </div>
+      <div>
+        <button
+          type="submit"
+          class="bg-blue-500 text-lg text-white font-medium py-1 px-6 rounded-lg"
+        >
+          Home
+        </button>
+      </div>
+    </header>
+    <main class="w-11/12 mx-auto mb-12">
+      <div class="py-4">
+        <h2 class="text-2xl font-medium pb-2">
+          What is DOM and what is the purpose of DOM?
+        </h2>
+        <p class="text-lg">
+          DOM mean's document object model.DOM is a intermediate level interface
+          between html and javascript , whole browser that we shows this is
+          situated on window object and into the window object whole html is a
+          document.These document are object and html structure are arranged
+          like as model and that's why these interface ar called DOM. The
+          purposes of DOM are very interesting, with DOM user interact with html
+          structure or called that with DOM browser are dynamic and interactive.
+        </p>
+      </div>
+      <div class="py-4">
+        <h2 class="text-2xl font-medium pb-2">
+          How will you select HTML elements using DOM? Name the DOM methods.
+        </h2>
+        <p class="text-lg">
+          Select elements using DOM are five method. These are , <br />
+          1) when i wanna select element with tag name then use,
+          document.getElementsByTagName(), in the bracket give tag name what
+          wanna select in a inverted comma and get a HTMLcollection that's are
+          iterable array like object. <br />
+          2) when select element with class name then use,
+          document.getElementsByClassName(), in the bracket give class name what
+          wanna select in a inverted comma and get a HTMLcollection that's are
+          iterable array like object. <br />
+          3) when i wanna select element with id name then use,
+          document.getElementById(), in the bracket give id name what wanna
+          select in a inverted comma and get one element.<br />
+          4) when select element with id or class name then use,
+          document.querySelector(), in the bracket give id or class name what
+          wanna select in a inverted comma and in the inverted comma give . for
+          class name and give # for id selection and get one element for id and
+          class also ,if same name class are many then these give me first
+          element. <br />
+          5) when select element with class name many elements then use,
+          document.querySelectorAll(), in the bracket give tag name or class
+          name what wanna select in a inverted comma and get a NodeList that's
+          are iterable array like object. <br />
+        </p>
+      </div>
+      <div class="py-4">
+        <h2 class="text-2xl font-medium pb-2">What is event bubble?</h2>
+        <p class="text-lg">
+          Event Bubbling is a concept in the DOM. It's means that when an
+          element receives an event, and that event bubbles up to its parent and
+          ancestor elements in the DOM tree until it gets to the root element.
+          If we wanna stop this bubbling that use event.stopPropagation() in the
+          section what we wanna stop.
+        </p>
+      </div>
+      <div class="py-4">
+        <h2 class="text-2xl font-medium pb-2">
+          What is a callback function and why will you use it?
+        </h2>
+        <p class="text-lg">
+          JavaScript callback function that is passed as an argument to another
+          function so that it can be executed in that other function is called
+          as a callback function. Callback functions are needed because many
+          JavaScript actions are asynchronous. it executes in the background
+          while the rest of the code runs.when we use event then we use callback
+          function because we want to when event fire then use function
+        </p>
+      </div>
+    </main>
+    <!-- js file include here  -->
+    <script src="js/geomentry.js"></script>
+  </body>
+</html>
