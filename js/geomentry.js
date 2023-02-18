@@ -44,7 +44,7 @@ function showCalculation(Name, finalResult) {
 
 // triangle value calculation
 document.querySelector("#btn-triangle").addEventListener("click", function () {
-  const inputMultiple = inputValueMultiple("#b", "#h");
+  const inputMultiple = inputValueMultiple("#triangle-b", "#triangle-h");
   if (inputMultiple === 0) {
     alert("please input a Number");
   } else {
@@ -55,7 +55,7 @@ document.querySelector("#btn-triangle").addEventListener("click", function () {
 
 // rectangle value calculation
 document.querySelector("#btn-rectangle").addEventListener("click", function () {
-  const inputMultiple = inputValueMultiple("#w", "#i");
+  const inputMultiple = inputValueMultiple("#rectangle-w", "#rectangle-l");
   if (inputMultiple === 0) {
     alert("please input a Number");
   } else {
@@ -67,7 +67,10 @@ document.querySelector("#btn-rectangle").addEventListener("click", function () {
 document
   .querySelector("#btn-parallelogram")
   .addEventListener("click", function () {
-    const inputMultiple = inputValueMultiple("#bx", "#hy");
+    const inputMultiple = inputValueMultiple(
+      "#parallelogram-b",
+      "#parallelogram-h"
+    );
     if (inputMultiple === 0) {
       alert("please input a Number");
     } else {
@@ -77,7 +80,7 @@ document
 
 // rhombus value calculation
 document.querySelector("#btn-rhombus").addEventListener("click", function () {
-  const inputMultiple = inputValueMultiple("#d1", "#d2");
+  const inputMultiple = inputValueMultiple("#rhombus-d1", "#rhombus-d2");
   if (inputMultiple === 0) {
     alert("please input a Number");
   } else {
@@ -88,7 +91,7 @@ document.querySelector("#btn-rhombus").addEventListener("click", function () {
 
 // pentagon value calculation
 document.querySelector("#btn-pentagon").addEventListener("click", function () {
-  const inputMultiple = inputValueMultiple("#p", "#bz");
+  const inputMultiple = inputValueMultiple("#pentagon-p", "#pentagon-b");
   if (inputMultiple === 0) {
     alert("please input a Number");
   } else {
@@ -99,7 +102,7 @@ document.querySelector("#btn-pentagon").addEventListener("click", function () {
 
 // ellipse value calculation
 document.querySelector("#btn-ellipse").addEventListener("click", function () {
-  const inputMultiple = inputValueMultiple("#a", "#bw");
+  const inputMultiple = inputValueMultiple("#ellipse-a", "#ellipse-b");
   if (inputMultiple === 0) {
     alert("please input a Number");
   } else {
@@ -143,7 +146,7 @@ function styleMouseOut(idName) {
 }
 // designing hover color on triangle
 document.querySelector("#triangle").addEventListener("mouseover", function () {
-  styleMouseOver("#triangle", "#b", "#h");
+  styleMouseOver("#triangle", "#triangle-b", "#triangle-h");
 });
 // designing hover color on triangle
 document.querySelector("#triangle").addEventListener("mouseout", function () {
@@ -151,7 +154,7 @@ document.querySelector("#triangle").addEventListener("mouseout", function () {
 });
 // designing hover color on rectangle
 document.querySelector("#rectangle").addEventListener("mouseover", function () {
-  styleMouseOver("#rectangle", "#w", "#i");
+  styleMouseOver("#rectangle", "#rectangle-w", "#rectangle-l");
 });
 // designing hover color on rectangle
 document.querySelector("#rectangle").addEventListener("mouseout", function () {
@@ -161,7 +164,7 @@ document.querySelector("#rectangle").addEventListener("mouseout", function () {
 document
   .querySelector("#parallelogram")
   .addEventListener("mouseover", function () {
-    styleMouseOver("#parallelogram", "#bx", "#hy");
+    styleMouseOver("#parallelogram", "#parallelogram-b", "#parallelogram-h");
   });
 // designing hover color on parallelogram
 document
@@ -171,7 +174,7 @@ document
   });
 // designing hover color on rhombus
 document.querySelector("#rhombus").addEventListener("mouseover", function () {
-  styleMouseOver("#rhombus", "#d1", "#d2");
+  styleMouseOver("#rhombus", "#rhombus-d1", "#rhombus-d2");
 });
 // designing hover color on rhombus
 document.querySelector("#rhombus").addEventListener("mouseout", function () {
@@ -179,7 +182,7 @@ document.querySelector("#rhombus").addEventListener("mouseout", function () {
 });
 // designing hover color on pentagon
 document.querySelector("#pentagon").addEventListener("mouseover", function () {
-  styleMouseOver("#pentagon", "#p", "#bz");
+  styleMouseOver("#pentagon", "#pentagon-p", "#pentagon-b");
 });
 // designing hover color on pentagon
 document.querySelector("#pentagon").addEventListener("mouseout", function () {
@@ -187,7 +190,7 @@ document.querySelector("#pentagon").addEventListener("mouseout", function () {
 });
 // designing hover color on ellipse
 document.querySelector("#ellipse").addEventListener("mouseover", function () {
-  styleMouseOver("#ellipse", "#a", "#bw");
+  styleMouseOver("#ellipse", "#ellipse-a", "#ellipse-b");
 });
 // designing hover color on ellipse
 document.querySelector("#ellipse").addEventListener("mouseout", function () {
