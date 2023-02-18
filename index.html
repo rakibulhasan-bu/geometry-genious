@@ -7,17 +7,6 @@
     <title>Geometry Genius Projects</title>
     <!-- tailwind css link  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- custom css for tailwind  -->
-    <style type="text/tailwindcss">
-      @layer utilities {
-        .button {
-          padding: 0.6em 1em;
-          border: none;
-          border-radius: 8px;
-          background: #b68c5a;
-        }
-      }
-    </style>
   </head>
   <body>
     <header
@@ -38,15 +27,19 @@
       </div>
     </header>
     <main class="w-11/12 mx-auto flex lg:flex-row flex-col gap-4">
+      <!-- shape div are start here  -->
       <div class="w-full lg:w-3/4 grid lg:grid-cols-3 gap-4">
+        <!-- triangle div start here  -->
         <div
           class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
         >
-          <img
-            src="/images/triangle.png"
-            class="w-9/12 mx-auto"
-            alt="These is Triangle image"
-          />
+          <div class="h-2/5 mb-8">
+            <img
+              src="/images/triangle.png"
+              class="w-10/12 mx-auto h-5/6"
+              alt="These is Triangle image"
+            />
+          </div>
           <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
           <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
           <div class="flex px-6 mb-8 mt-3">
@@ -74,16 +67,20 @@
             Calculate
           </button>
         </div>
+
+        <!-- Rectangle div start here  -->
         <div
           class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
         >
-          <img
-            src="/images/triangle.png"
-            class="w-9/12 mx-auto"
-            alt="These is Triangle image"
-          />
-          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
-          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="h-2/5 mb-8">
+            <img
+              src="/images/rectangle.png"
+              class="w-10/12 mx-auto"
+              alt="These is Rectangle image"
+            />
+          </div>
+          <h2 class="text-center text-xl font-semibold mt-6">Rectangle</h2>
+          <p class="text-center text-sm">Area (A) = w * I</p>
           <div class="flex px-6 mb-8 mt-3">
             <div class="w-1/2">
               <input
@@ -109,16 +106,20 @@
             Calculate
           </button>
         </div>
+
+        <!-- Parallelogram div start here  -->
         <div
           class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
         >
-          <img
-            src="/images/triangle.png"
-            class="w-9/12 mx-auto"
-            alt="These is Triangle image"
-          />
-          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
-          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="h-2/5 mb-8">
+            <img
+              src="/images/parallelogram.png"
+              class="w-10/12 mx-auto"
+              alt="These is Parallelogram image"
+            />
+          </div>
+          <h2 class="text-center text-xl font-semibold mt-6">Parallelogram</h2>
+          <p class="text-center text-sm">Area (A) = b * h</p>
           <div class="flex px-6 mb-8 mt-3">
             <div class="w-1/2">
               <input
@@ -144,16 +145,22 @@
             Calculate
           </button>
         </div>
+
+        <!-- Rhombus div start here  -->
         <div
           class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
         >
-          <img
-            src="/images/triangle.png"
-            class="w-9/12 mx-auto"
-            alt="These is Triangle image"
-          />
-          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
-          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="h-2/5 mb-8">
+            <img
+              src="/images/rhombus.png"
+              class="w-10/12 mx-auto h-5/6"
+              alt="These is Rhombus image"
+            />
+          </div>
+          <h2 class="text-center text-xl font-semibold mt-6">Rhombus</h2>
+          <p class="text-center text-sm">
+            Area (A) =0.5 * d<sub>1</sub> * d<sub>2</sub>
+          </p>
           <div class="flex px-6 mb-8 mt-3">
             <div class="w-1/2">
               <input
@@ -179,16 +186,20 @@
             Calculate
           </button>
         </div>
+
+        <!-- Pentagon div start here  -->
         <div
           class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
         >
-          <img
-            src="/images/triangle.png"
-            class="w-9/12 mx-auto"
-            alt="These is Triangle image"
-          />
-          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
-          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="h-2/5 mb-8">
+            <img
+              src="/images/pentagon.png"
+              class="w-10/12 mx-auto h-5/6"
+              alt="These is Pentagon image"
+            />
+          </div>
+          <h2 class="text-center text-xl font-semibold mt-6">Pentagon</h2>
+          <p class="text-center text-sm">Area (A) =0.5 * p * b</p>
           <div class="flex px-6 mb-8 mt-3">
             <div class="w-1/2">
               <input
@@ -214,16 +225,20 @@
             Calculate
           </button>
         </div>
+
+        <!-- Ellipse div start here  -->
         <div
           class="p-8 border border-1 border-solid border-zinc-200 rounded-md"
         >
-          <img
-            src="/images/triangle.png"
-            class="w-9/12 mx-auto"
-            alt="These is Triangle image"
-          />
-          <h2 class="text-center text-xl font-semibold mt-6">Triangle</h2>
-          <p class="text-center text-sm">Area (A) =0.5 * b * h</p>
+          <div class="h-2/5 mb-8">
+            <img
+              src="/images/ellipse.png"
+              class="w-10/12 mx-auto"
+              alt="These is Ellipse image"
+            />
+          </div>
+          <h2 class="text-center text-xl font-semibold mt-6">Ellipse</h2>
+          <p class="text-center text-sm">Area (A) =PI ab</p>
           <div class="flex px-6 mb-8 mt-3">
             <div class="w-1/2">
               <input
@@ -250,7 +265,23 @@
           </button>
         </div>
       </div>
-      <div class="w-full lg:w-1/4 bg-slate-800">sdl;jhksdf;g</div>
+      <!-- area calculation div start here  -->
+      <div class="w-full lg:w-1/4 border-2 border-zinc-200 rounded-md mb-10">
+        <h3
+          class="text-xl text-center underline underline-offset-4 decoration-slate-500 py-4"
+        >
+          Area calculation
+        </h3>
+        <div class="flex justify-between px-4">
+          <p>1.Triangle</p>
+          <p>12 cm<sup>2</sup></p>
+          <button
+            class="bg-blue-500 text-white font-medium py-1 px-2 rounded-lg"
+          >
+            Convert to m<sup>2</sup>
+          </button>
+        </div>
+      </div>
     </main>
     <!-- js file include here  -->
     <script src="js/geomentry.js"></script>
