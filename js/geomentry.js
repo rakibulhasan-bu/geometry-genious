@@ -18,7 +18,6 @@ function inputValueMultiple(inputId1, inputId2) {
     inputValue1 === 0 ||
     inputValue2 === 0
   ) {
-    alert("please input a Number");
     return 0;
   } else {
     return inputValue1 * inputValue2;
@@ -46,14 +45,22 @@ function showCalculation(Name, finalResult) {
 // triangle value calculation
 document.querySelector("#btn-triangle").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#b", "#h");
-  const finalCalculation = 0.5 * inputMultiple;
-  showCalculation("Triangle", finalCalculation);
+  if (inputMultiple === 0) {
+    alert("please input a Number");
+  } else {
+    const finalCalculation = 0.5 * inputMultiple;
+    showCalculation("Triangle", finalCalculation);
+  }
 });
 
 // rectangle value calculation
 document.querySelector("#btn-rectangle").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#w", "#i");
-  showCalculation("Rectangle", inputMultiple);
+  if (inputMultiple === 0) {
+    alert("please input a Number");
+  } else {
+    showCalculation("Rectangle", inputMultiple);
+  }
 });
 
 // parallelogram value calculation
@@ -61,28 +68,44 @@ document
   .querySelector("#btn-parallelogram")
   .addEventListener("click", function () {
     const inputMultiple = inputValueMultiple("#bx", "#hy");
-    showCalculation("Parallelogram", inputMultiple);
+    if (inputMultiple === 0) {
+      alert("please input a Number");
+    } else {
+      showCalculation("Parallelogram", inputMultiple);
+    }
   });
 
 // rhombus value calculation
 document.querySelector("#btn-rhombus").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#d1", "#d2");
-  const finalCalculation = 0.5 * inputMultiple;
-  showCalculation("Rhombus", finalCalculation);
+  if (inputMultiple === 0) {
+    alert("please input a Number");
+  } else {
+    const finalCalculation = 0.5 * inputMultiple;
+    showCalculation("Rhombus", finalCalculation);
+  }
 });
 
 // pentagon value calculation
 document.querySelector("#btn-pentagon").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#p", "#bz");
-  const finalCalculation = 0.5 * inputMultiple;
-  showCalculation("Pentagon", finalCalculation);
+  if (inputMultiple === 0) {
+    alert("please input a Number");
+  } else {
+    const finalCalculation = 0.5 * inputMultiple;
+    showCalculation("Pentagon", finalCalculation);
+  }
 });
 
 // ellipse value calculation
 document.querySelector("#btn-ellipse").addEventListener("click", function () {
   const inputMultiple = inputValueMultiple("#a", "#bw");
-  const finalCalculation = (3.1416 * inputMultiple).toFixed(2);
-  showCalculation("Ellipse", finalCalculation);
+  if (inputMultiple === 0) {
+    alert("please input a Number");
+  } else {
+    const finalCalculation = (3.1416 * inputMultiple).toFixed(2);
+    showCalculation("Ellipse", finalCalculation);
+  }
 });
 
 //get 6 digits number
